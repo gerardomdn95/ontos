@@ -1,0 +1,185 @@
+{
+    "xloco": {
+        "usuario": {
+            "nbusuario": "Rene",
+            "ontologia": {
+                "nbontologia": "conta",
+                "ideal": {
+                    "nbideal": "calculador de isan",
+                    "atributos": {
+                        "atributo": [
+                            {
+                                "nbatributo": "precio",
+                                "tipo": "decimal"
+                            },
+                            {
+                                "nbatributo": "liminf",
+                                "tipo": "decimal"
+                            },
+                            {
+                                "nbatributo": "limsup",
+                                "tipo": "decimal"
+                            },
+                            {
+                                "nbatributo": "tasa",
+                                "tipo": "decimal"
+                            },
+                            {
+                                "nbatributo": "fija",
+                                "tipo": "decimal"
+                            },
+                            {
+                                "nbatributo": "isan",
+                                "tipo": "decimal"
+                            }
+                        ]
+                    },
+                    "metodos": {
+                        "metodo": {
+                            "asignacion": [
+                                {
+                                    "variable": "precio",
+                                    "operando": "200000"
+                                },
+                                {
+                                    "condicion": "precio > 0.01 && !(precio > 233343.40)",
+                                    "verdadero": {
+                                        "metodo": {
+                                            "asignacion": [
+                                                {
+                                                    "variable": "tasa",
+                                                    "operando": "2.0"
+                                                },
+                                                {
+                                                    "variable": "fija",
+                                                    "operando": "0.00"
+                                                },
+                                                {
+                                                    "variable": "liminferior",
+                                                    "operando": "0.01"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "falso": {
+                                        "metodo": {
+                                            "nbmetodo": "metodo2",
+                                            "decision": {
+                                                "condicion": "precio > 233343.40 && !(precio > 280012.02)",
+                                                "verdadero": {
+                                                    "metodo": {
+                                                        "asignacion": [
+                                                            {
+                                                                "variable": "tasa",
+                                                                "operando": "5.0"
+                                                            },
+                                                            {
+                                                                "variable": "fija",
+                                                                "operando": "4666.79"
+                                                            },
+                                                            {
+                                                                "variable": "liminferior",
+                                                                "operando": "233343.41"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "falso": {
+                                                    "metodo": {
+                                                        "nbmetodo": "metodo4",
+                                                        "decision": {
+                                                            "condicion": "precio > 280012.03 && !(precio > 326680.83)",
+                                                            "verdadero": {
+                                                                "metodo": {
+                                                                    "asignacion": [
+                                                                        {
+                                                                            "variable": "tasa",
+                                                                            "operando": "10.0"
+                                                                        },
+                                                                        {
+                                                                            "variable": "fija",
+                                                                            "operando": "7000.33"
+                                                                        },
+                                                                        {
+                                                                            "variable": "liminferior",
+                                                                            "operando": "280012.03"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "falso": {
+                                                                "metodo": {
+                                                                    "nbmetodo": "metodo6",
+                                                                    "decision": {
+                                                                        "condicion": "precio > 326680.84 && !(precio > 420017.94)",
+                                                                        "verdadero": {
+                                                                            "metodo": {
+                                                                                "asignacion": [
+                                                                                    {
+                                                                                        "variable": "tasa",
+                                                                                        "operando": "15.0"
+                                                                                    },
+                                                                                    {
+                                                                                        "variable": "fija",
+                                                                                        "operando": "11667.19"
+                                                                                    },
+                                                                                    {
+                                                                                        "variable": "liminferior",
+                                                                                        "operando": "326680.84"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "falso": {
+                                                                            "metodo": {
+                                                                                "nbmetodo": "metodo8",
+                                                                                "decision": {
+                                                                                    "condicion": "precio > 420017.95",
+                                                                                    "verdadero": {
+                                                                                        "metodo": {
+                                                                                            "asignacion": [
+                                                                                                {
+                                                                                                    "variable": "tasa",
+                                                                                                    "operando": "17.0"
+                                                                                                },
+                                                                                                {
+                                                                                                    "variable": "fija",
+                                                                                                    "operando": "25667.73"
+                                                                                                },
+                                                                                                {
+                                                                                                    "variable": "liminferior",
+                                                                                                    "operando": "420017.95"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    "falso": {
+                                                                                        "metodo": {
+                                                                                            "nbmetodo": "metodoVacio"
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "variable": "isan",
+                                    "operando": "((precio-liminferior)*tasa)+fija"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
