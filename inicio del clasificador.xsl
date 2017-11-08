@@ -8,7 +8,7 @@
 
 <!-- Object or Element Property-->
 <xsl:template match="*">
-    "<xsl:value-of select="name()"/>" :<xsl:call-template name="Properties">
+       "<xsl:value-of select="name()"/>" :<xsl:call-template name="Properties">
         <xsl:with-param name="parent" select="'Yes'"> </xsl:with-param>
     </xsl:call-template>
 </xsl:template>
