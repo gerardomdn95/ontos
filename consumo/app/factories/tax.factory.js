@@ -5,7 +5,7 @@
         .module('gilApp')
         .factory("taxJson", taxJson);
 
-    function gafApi($resource) {
+    function taxJson($resource) {
         return $resource("./impuesto.json");
     }
 })();
