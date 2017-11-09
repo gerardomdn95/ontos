@@ -1,4 +1,4 @@
-{
+[{
     "xloco": {
         "usuario": {
             "nbusuario": "Rene",
@@ -7,8 +7,7 @@
                 "ideal": {
                     "nbideal": "calculador de isan",
                     "atributos": {
-                        "atributo": [
-                            {
+                        "atributo": [{
                                 "nbatributo": "precio",
                                 "tipo": "decimal"
                             },
@@ -36,8 +35,7 @@
                     },
                     "metodos": {
                         "metodo": {
-                            "asignacion": [
-                                {
+                            "asignacion": [{
                                     "variable": "precio",
                                     "operando": "200000"
                                 },
@@ -45,8 +43,7 @@
                                     "condicion": "precio > 0.01 && !(precio > 233343.40)",
                                     "verdadero": {
                                         "metodo": {
-                                            "asignacion": [
-                                                {
+                                            "asignacion": [{
                                                     "variable": "tasa",
                                                     "operando": "2.0"
                                                 },
@@ -68,8 +65,7 @@
                                                 "condicion": "precio > 233343.40 && !(precio > 280012.02)",
                                                 "verdadero": {
                                                     "metodo": {
-                                                        "asignacion": [
-                                                            {
+                                                        "asignacion": [{
                                                                 "variable": "tasa",
                                                                 "operando": "5.0"
                                                             },
@@ -91,8 +87,7 @@
                                                             "condicion": "precio > 280012.03 && !(precio > 326680.83)",
                                                             "verdadero": {
                                                                 "metodo": {
-                                                                    "asignacion": [
-                                                                        {
+                                                                    "asignacion": [{
                                                                             "variable": "tasa",
                                                                             "operando": "10.0"
                                                                         },
@@ -114,8 +109,7 @@
                                                                         "condicion": "precio > 326680.84 && !(precio > 420017.94)",
                                                                         "verdadero": {
                                                                             "metodo": {
-                                                                                "asignacion": [
-                                                                                    {
+                                                                                "asignacion": [{
                                                                                         "variable": "tasa",
                                                                                         "operando": "15.0"
                                                                                     },
@@ -137,8 +131,7 @@
                                                                                     "condicion": "precio > 420017.95",
                                                                                     "verdadero": {
                                                                                         "metodo": {
-                                                                                            "asignacion": [
-                                                                                                {
+                                                                                            "asignacion": [{
                                                                                                     "variable": "tasa",
                                                                                                     "operando": "17.0"
                                                                                                 },
@@ -182,4 +175,4 @@
             }
         }
     }
-}
+}]
